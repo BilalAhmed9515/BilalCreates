@@ -21,23 +21,24 @@ const Contact_Us = () => {
     const handlechage = (e) => {
         const { name, type, checked, value, files } = e.target
         if (type == 'checkbox') {
-            setFormData((prev) => {
+            setFormData((prev)=>{
                 if (checked) {
-                    return { ...prev, topics: [...prev.topics, value] }
+                    return {...prev, topics : [...prev.topics, value]}
                 } else {
-                    return { ...prev, topics: [prev.topics.filter((item) => item !== value)] }
+                    return {...prev, topics : [prev.topics.filter((item)=>item !==value)]}
                 }
             })
-
         } else if (type == 'file') {
-            setFormData((prev) => {
-              return {...prev, file:[...prev.file, files]}
+            setFormData((prev)=>{
+                return {...prev, file : [prev.file, files]}
             })
-        } else {
-            setFormData({ ...formData, [name]: value })
+        }else{
+            setFormData({...formData, [name] : value})
         }
 
     }
+
+       
 
     const handlesubmit = (e) => {
         e.preventDefault()
