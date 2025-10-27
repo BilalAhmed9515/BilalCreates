@@ -30,7 +30,8 @@ const Contact_Us = () => {
             })
         } else if (type == 'file') {
             setFormData((prev)=>{
-                return {...prev, file : [prev.file, files]}
+                setPreview(Array.from(e.target.files))
+                return {...prev, file : [...prev.file, files]}
             })
         }else{
             setFormData({...formData, [name] : value})
