@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:wght@400;700&family=Pacifico&display=swap');
+
+@font-face {
+  font-family: 'Royal';
+  src: url('./assets/royal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qwenzy';
+  src: url('./assets/Qwenzy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

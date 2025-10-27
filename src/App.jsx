@@ -8,6 +8,7 @@ import Home from './Components/Home/Home'
 import About_Us from './Components/About_Us/About_Us'
 import Services from './Components/Services/Services'
 import Contact_Us from './Components/Contact_Us/Contact_Us'
+import Hero from './Components/Hero Section/Hero'
 
 function App() {
   const [count, setCount] = useState(0)

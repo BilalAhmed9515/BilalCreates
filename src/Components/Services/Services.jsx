@@ -1,8 +1,12 @@
 import React from 'react'
+import bg from '../Services/Images/bg.jpg'
+import Hero from '../Hero Section/Hero'
 
-const Services = () => {
+const Services = ({bgimg}) => {
   return (
-    <>Services</>
+    <>
+    <Hero bgimg={bg} name={"Services"}/>
+    </>
   )
 }
 
